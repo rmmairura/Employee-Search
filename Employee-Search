@@ -1,0 +1,103 @@
+A={
+     'ename':'Ally',
+     'empno':1,
+     'salary':600,
+      'deptno':10
+ }
+B={
+       'ename':'Mark',
+        'empno':2,
+        'salary':700,
+       'deptno':10
+ }
+
+C={
+      'ename':'Sally',
+      'empno':3,
+      'salary':700,
+      'deptno':20
+  }
+
+
+
+def choice_empno():
+      n = (int(input("Enter an empno number:")))
+      if n == 1:
+        print(A.get('ename'))
+        print( A.get('empno'))
+        print( A.get('salary'))
+        print( A.get('deptno'))
+      elif n==2:
+          print(B.get('ename'))
+          print(B.get('empno'))
+          print(B.get('salary'))
+          print(B.get('deptno'))
+      elif n==3:
+          print(C.get("ename"))
+          print(C.get('empno'))
+          print(C.get('salary'))
+          print(C.get('deptno'))
+
+      else:
+          print("That empno number does not exist")
+
+def choice_deptno():
+      x = (int(input("Enter a deptno number:")))
+      if x == 10:
+          print(A.get('ename'))
+          print(A.get('empno'))
+          print(A.get('salary'))
+          print(A.get('deptno'))
+          print("===============================================")
+          print(B.get('ename'))
+          print(B.get('empno'))
+          print(B.get('salary'))
+          print(B.get('deptno'))
+      elif x==20:
+          print(C.get("ename"))
+          print(C.get('empno'))
+          print(C.get('salary'))
+          print(C.get('deptno'))
+      else:
+          print("That deptno does not exist")
+def choice_salary():
+      y= (int(input("Enter a salary number:")))
+      if y == 600:
+          print(A.get('ename'))
+          print(A.get('empno'))
+          print(A.get('salary'))
+          print(A.get('deptno'))
+      elif y == 700:
+          print(B.get('ename'))
+          print(B.get('empno'))
+          print(B.get('salary'))
+          print(B.get('deptno'))
+          print("===============================================")
+          print(C.get("ename"))
+          print(C.get('empno'))
+          print(C.get('salary'))
+          print(C.get('deptno'))
+
+      else:
+         print(f"That salary does not exist ")
+
+
+while True:
+      print(f"\t\t\t\t MENU: Press 1,2,3 or 4")
+      print(f"\t\t\t\t====================================")
+      print(f"\t\t\t\t1. Find employees by empno.")
+      print(f"\t\t\t\t2. Find employees by deptno.")
+      print(f"\t\t\t\t3. Find employees by salary.")
+      print(f"\n\n\t\t\t\t4. Press 4 to quit.")
+
+      choice= int(input("Enter your choice of operation:"))
+      if choice == 4:
+           break
+      elif choice == 1:
+          print(choice_empno())
+      elif choice == 2:
+          print(choice_deptno())
+      elif choice == 3:
+       print(choice_salary())
+      else:
+          print("Choice is not available")
